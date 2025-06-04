@@ -74,3 +74,25 @@ while (!reader.EndOfStream)
 Console.WriteLine("1. feladat: A fájl beolvasása sikeres!");
 
 ```
+
+
+## Form Objektum dinamikus létrehozás
+```
+CheckBox[] mezok = new CheckBox[10];
+
+int x = 15;
+int y = 110;
+
+for (int i = 0; i < 10; i++) 
+    {
+        CheckBox cb = new CheckBox();
+        cb.AutoSize = true;
+        cb.Location = new Point(x, y);
+        mezok[i, j] = cb;
+        this.Controls.Add(cb);
+        x += 26;
+        
+    }
+
+
+```
